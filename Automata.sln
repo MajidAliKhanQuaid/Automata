@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strenuous Automata", "Strenuous Automata\Strenuous Automata.csproj", "{2EE9C873-5DAD-4C4A-91C8-C2307D032BDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CYKAlgorithmLibrary", "CYKAlgorithmLibrary\CYKAlgorithmLibrary.csproj", "{DD61058B-BB78-499B-AF31-47719AEC9933}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EE9C873-5DAD-4C4A-91C8-C2307D032BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE9C873-5DAD-4C4A-91C8-C2307D032BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE9C873-5DAD-4C4A-91C8-C2307D032BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE9C873-5DAD-4C4A-91C8-C2307D032BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD61058B-BB78-499B-AF31-47719AEC9933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD61058B-BB78-499B-AF31-47719AEC9933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD61058B-BB78-499B-AF31-47719AEC9933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD61058B-BB78-499B-AF31-47719AEC9933}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

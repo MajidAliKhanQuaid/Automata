@@ -1,0 +1,140 @@
+﻿<Application x:Class="Strenuous_Automata.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Strenuous_Automata"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        
+        <ControlTemplate x:Key="btnCloseWindowTemplate" TargetType="Button">
+            <Image>
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Source" Value="Images/blue-close.png" />
+                        <Setter Property="ToolTip" Value="Exit" />
+                        <Setter Property="Height" Value="{Binding}" />
+                        <Setter Property="Width" Value="{Binding}" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="Images/red-close.png"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+        </ControlTemplate>
+        <ControlTemplate x:Key="btnAddNewProduction" TargetType="Button">
+            <Image>
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Source" Value="Images/blue-add.png" />
+                        <Setter Property="ToolTip" Value="Add New Production" />
+                        <Setter Property="Height" Value="{Binding}" />
+                        <Setter Property="Width" Value="{Binding}" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="Images/red-add.png"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+        </ControlTemplate>
+        <ControlTemplate x:Key="btnAddShowTraingle" TargetType="Button">
+            <Image>
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Source" Value="Images/blue-plot.png" />
+                        <Setter Property="ToolTip" Value="Show CYK Implementation" />
+                        <Setter Property="Height" Value="{Binding}" />
+                        <Setter Property="Width" Value="{Binding}" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="Images/red-plot.png"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+        </ControlTemplate>
+        <ControlTemplate x:Key="btnGoBackTemplate" TargetType="Button">
+            <Image>
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Source" Value="Images/blue-back.png" />
+                        <Setter Property="ToolTip" Value="Back" />
+                        <Setter Property="Height" Value="{Binding}" />
+                        <Setter Property="Width" Value="{Binding}" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="Images/red-back.png"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+        </ControlTemplate>
+        <ControlTemplate x:Key="btnDeleteProductionTemplate" TargetType="Button">
+            <Image>
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Source" Value="Images/blue-delete.png" />
+                        <Setter Property="ToolTip" Value="Remove Production" />
+                        <Setter Property="Height" Value="50" />
+                        <Setter Property="Width" Value="50" />
+                        <Setter Property="Margin" Value="20,0,0,0" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="Images/red-delete.png"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+        </ControlTemplate>
+        
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="#BFBFBF" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="MaxLines" Value="1" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="lblMenuStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="Margin" Value="50,0,0,0" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Foreground" Value="Navy" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+        <Style x:Key="lblTitleStyle" TargetType="Label">
+            <Setter Property="Margin" Value="0,0,0,10" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Foreground" Value="#3498db" />
+            <Setter Property="VerticalAlignment" Value="Bottom" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="BlueViolet" />
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="FontFamily" Value="Berlin Sans FB" />
+        </Style>
+        <Style x:Key="imgRedArrowStyle" TargetType="Image">
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="70" />
+        </Style>
+        <Style x:Key="imgBlueSeperatorStyle" TargetType="Image">
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="50" />
+        </Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="Strenuous_Automata.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Strenuous_Automata"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowStyle="None" WindowState="Maximized" Loaded="Window_Loaded_1">
+
+    <DockPanel Margin="20">
+        <Grid DockPanel.Dock="Top" Height="60" VerticalAlignment="Top" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+
+            <Button Name="btnCloseApplication" Grid.Column="1" Template="{DynamicResource btnCloseWindowTemplate}"  Click="btnCloseApplication_Click"></Button>
+
+        </Grid>
+    </DockPanel>
+    
+</Window>
