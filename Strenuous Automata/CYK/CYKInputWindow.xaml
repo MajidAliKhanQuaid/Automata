@@ -7,7 +7,34 @@
         mc:Ignorable="d"
         Title="CYKInputWindow" WindowStyle="None" WindowState="Maximized">
 
-    <DockPanel Margin="20">
+    <DockPanel Name="container" Margin="20">
+
+        <Popup Name="hintPopUp" PopupAnimation="Fade" Placement="Center" PlacementTarget="{Binding ElementName=container}" IsOpen="True" Width="{Binding Source={x:Static SystemParameters.PrimaryScreenWidth}}" Height="{Binding Source={x:Static SystemParameters.PrimaryScreenHeight}}" ClipToBounds="True" AllowsTransparency="True">
+            <StackPanel Background="#95a5a6" Opacity="0.8" VerticalAlignment="Center" HorizontalAlignment="Center" Height="500" Width="900">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20">
+                    <Button Name="btnClosePopUp" Height="25" Width="25" Template="{DynamicResource btnCloseWindowTemplate}" Click="btnClosePopUp_Click" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20,0,20,0">
+                    <Image Source="../Images/red-alert.png" Height="200" Width="200" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="20,0,0,0">
+                    <Label Width="200" Foreground="White" FontWeight="Bold">Non Terminals</Label>
+                    <Label Foreground="White">Accepted Values between A-W (Upper Case Default)</Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="20,0,0,0">
+                    <Label Width="200" Foreground="White" FontWeight="Bold">Production Values</Label>
+                    <Label Foreground="White">Any Alphabet (Case-Sensitive)</Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="20,0,0,0">
+                    <Label Width="200" Foreground="White" FontWeight="Bold">Input</Label>
+                    <Label Foreground="White">Any Alphabet (Lower Case Default)</Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="20,0,0,0">
+                    <Label Foreground="White">**Important : Input should in CNF or else undesired results may be produced</Label>
+                </StackPanel>
+            </StackPanel>
+        </Popup>
+
         <Grid DockPanel.Dock="Top" Height="60" VerticalAlignment="Top" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />

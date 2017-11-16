@@ -117,6 +117,7 @@
   <ItemGroup>
     <Resource Include="Images\black-close.png" />
     <Resource Include="Images\blue-close.png" />
+    <Resource Include="Images\logo.png" />
     <Resource Include="Images\red-close.png" />
   </ItemGroup>
   <ItemGroup>
@@ -136,9 +137,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\red-arrow.png" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +149,9 @@
   <ItemGroup>
     <Resource Include="Images\blue-delete.png" />
     <Resource Include="Images\red-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\red-alert.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

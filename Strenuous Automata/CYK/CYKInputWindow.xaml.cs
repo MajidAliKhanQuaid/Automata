@@ -24,6 +24,8 @@ namespace Strenuous_Automata.CYK
 
         private void btnCloseApplication_Click(object sender, RoutedEventArgs e)
         {
+            hintPopUp.IsOpen = false;
+            //
             MessageBoxResult dialogResult = MessageBox.Show("Do you want to Quit ?", "Strenuous Automata", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (dialogResult == MessageBoxResult.Yes)
             {
@@ -42,7 +44,6 @@ namespace Strenuous_Automata.CYK
                 {
                     message += prodValue + " | ";
                 }
-                MessageBox.Show(message);
             }
         }
 
@@ -418,10 +419,19 @@ namespace Strenuous_Automata.CYK
         {
             List<Production> Productions = GetProductionValuesFromUI();
             //
-            CYKPlotWindow plotWindow = new CYKPlotWindow();
-            plotWindow.Show();
-            //
-            plotWindow.PlotChart(txtInput.Text, Productions);
+            string inputText = txtInput.Text.Trim();
+
+            if (inputText.Length > 0 && Productions.Count > 0)
+            {
+                CYKPlotWindow plotWindow = new CYKPlotWindow();
+                plotWindow.Show();
+                //
+                plotWindow.PlotChart(txtInput.Text, Productions);
+            }
+            else
+            {
+                MessageBox.Show("Please Enter Input/Productions First");
+            }
         }
 
         private void btnDeleteProduction_Click(object sender, RoutedEventArgs e)
@@ -469,5 +479,9 @@ namespace Strenuous_Automata.CYK
             }
         }
 
+        private void btnClosePopUp_Click(object sender, RoutedEventArgs e)
+        {
+            hintPopUp.IsOpen = false;
+        }
     }
 }
