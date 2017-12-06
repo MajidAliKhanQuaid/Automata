@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Strenuous_Automata"
         mc:Ignorable="d"
-        Title="MainWindow" WindowStyle="None" WindowState="Maximized" Loaded="Window_Loaded_1">
+        Title="MainWindow" WindowStyle="None" WindowState="Maximized" Loaded="Window_Loaded">
 
     <DockPanel Margin="20">
         <Grid DockPanel.Dock="Top" Height="60" VerticalAlignment="Top" >
@@ -17,6 +17,20 @@
             <Button Name="btnCloseApplication" Grid.Column="1" Template="{DynamicResource btnCloseWindowTemplate}"  Click="btnCloseApplication_Click"></Button>
 
         </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Name="btnCYK" Click="btnCYK_Click" Content="CYK Algo" Style="{DynamicResource MetroButton}" Height="100" Width="300" />
+            <Button Grid.Row="1"  Name="btnSubtractor" Click="btnSubtractor_Click" Content="Turing Subtractor"  Style="{DynamicResource MetroButton}"  Height="100" Width="300"  />
+
+        </Grid>
+        
+        
+        
     </DockPanel>
 
 </Window>

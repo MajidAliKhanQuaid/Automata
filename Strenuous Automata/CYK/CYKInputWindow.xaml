@@ -10,7 +10,7 @@
     <DockPanel Name="container" Margin="20">
 
         <Popup Name="hintPopUp" PopupAnimation="Fade" Placement="Center" PlacementTarget="{Binding ElementName=container}" IsOpen="True" Width="{Binding Source={x:Static SystemParameters.PrimaryScreenWidth}}" Height="{Binding Source={x:Static SystemParameters.PrimaryScreenHeight}}" ClipToBounds="True" AllowsTransparency="True">
-            <StackPanel Background="#95a5a6" Opacity="0.8" VerticalAlignment="Center" HorizontalAlignment="Center" Height="500" Width="900">
+            <StackPanel Background="#95a5a6" Opacity="1" VerticalAlignment="Center" HorizontalAlignment="Center" Height="500" Width="900">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20">
                     <Button Name="btnClosePopUp" Height="25" Width="25" Template="{DynamicResource btnCloseWindowTemplate}" Click="btnClosePopUp_Click" />
                 </StackPanel>

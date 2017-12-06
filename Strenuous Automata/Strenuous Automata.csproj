@@ -60,6 +60,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Subtractor\SubtractorWindow.xaml.cs">
+      <DependentUpon>SubtractorWindow.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CYK\CYKInputWindow.xaml.cs">
@@ -110,6 +113,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Subtractor\SubtractorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\close.png" />
@@ -134,6 +141,10 @@
     <ProjectReference Include="..\CYKAlgorithmLibrary\CYKAlgorithmLibrary.csproj">
       <Project>{dd61058b-bb78-499b-af31-47719aec9933}</Project>
       <Name>CYKAlgorithmLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TuringLibrary\TuringLibrary.csproj">
+      <Project>{b4933133-1f6c-4a50-865f-905c5faeb912}</Project>
+      <Name>TuringLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
