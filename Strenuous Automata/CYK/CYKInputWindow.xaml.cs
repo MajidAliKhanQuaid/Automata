@@ -483,5 +483,11 @@ namespace Strenuous_Automata.CYK
         {
             hintPopUp.IsOpen = false;
         }
+
+        private void btnGoBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            this.Close();
+        }
     }
 }

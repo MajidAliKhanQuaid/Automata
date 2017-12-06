@@ -37,11 +37,12 @@
 
         <Grid DockPanel.Dock="Top" Height="60" VerticalAlignment="Top" >
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="60" />
             </Grid.ColumnDefinitions>
-
-            <Button Name="btnCloseApplication" Grid.Column="1" Template="{DynamicResource btnCloseWindowTemplate}"  Click="btnCloseApplication_Click"></Button>
+            <Button Name="btnGoBack" Grid.Column="0" Template="{DynamicResource btnGoBackTemplate}"  Click="btnGoBack_Click"></Button>
+            <Button Name="btnCloseApplication" Grid.Column="2" Template="{DynamicResource btnCloseWindowTemplate}"  Click="btnCloseApplication_Click"></Button>
 
         </Grid>
         <Grid>

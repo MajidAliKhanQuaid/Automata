@@ -81,5 +81,11 @@ namespace Strenuous_Automata.Subtractor
 
         }
 
+        private void btnGoBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            this.Close();
+        }
+
     }
 }

@@ -26,12 +26,12 @@
 
         <Grid DockPanel.Dock="Top" Height="60" VerticalAlignment="Top" >
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="60" />
             </Grid.ColumnDefinitions>
-
-            <Button Name="btnCloseApplication" Grid.Column="1" Template="{DynamicResource btnCloseWindowTemplate}"  Click="btnCloseApplication_Click"></Button>
-
+            <Button Name="btnGoBack" Grid.Column="0" Template="{DynamicResource btnGoBackTemplate}"  Click="btnGoBack_Click"></Button>
+            <Button Name="btnCloseApplication" Grid.Column="2" Template="{DynamicResource btnCloseWindowTemplate}"  Click="btnCloseApplication_Click"></Button>
         </Grid>
 
 
@@ -56,7 +56,7 @@
                 <Button Name="btnShowResult"  Grid.Column="2" Template="{DynamicResource btnAddShowTraingle}" Click="btnShowResult_Click" />
             </StackPanel>
         </Grid>
-        
+
         <DataGrid Name="dgResults" FontSize="20" Width="600" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalAlignment="Center" HorizontalContentAlignment="Center" CellStyle="{DynamicResource DataGridContentCellCentering}" >
             <DataGrid.Columns>
                 <DataGridTextColumn Width="*" Header="Result" Binding="{Binding}" HeaderStyle="{DynamicResource DataGridHeaderContentCentering}" />
